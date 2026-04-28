@@ -90,7 +90,7 @@ Route::middleware('auth')->group(function () {
     Route::delete('/ourtrekking/{id}', [TrekkingController::class, 'destroy'])->name('ourtrekking.destroy');
 
     //
-     Route::get("/dashboard",function(){
+     Route::get("/",function(){
         return Inertia::render("AdminPage/Home");
     });
 
@@ -130,9 +130,9 @@ Route::middleware('auth')->group(function () {
         return Inertia::render("HomePage/HikingPage");
     });
 
-    Route::get("/",function(){
-        return Inertia::render("HomePage/Welcome");
-    });
+    // Route::get("/",function(){
+    //     return Inertia::render("HomePage/Welcome");
+    // });
 
 
  

@@ -656,11 +656,11 @@ const AdminSideBar = ({
                 >
                     {/* Dashboard Link */}
                     <Link
-                        href="/dashboard"
+                        href="/"
                         className={`
                             flex items-center rounded-lg transition-colors duration-200 group relative
                             ${isCollapsed ? "p-3 justify-center" : "p-3"}
-                            ${isActive("/dashboard") ? "bg-blue-50 text-blue-700 font-semibold border-l-4 border-blue-600" : "text-gray-600 hover:bg-blue-50 hover:text-blue-700"}
+                            ${isActive("/") ? "bg-blue-50 text-blue-700 font-semibold border-l-4 border-blue-600" : "text-gray-600 hover:bg-blue-50 hover:text-blue-700"}
                         `}
                         title={isCollapsed ? "Dashboard" : ""}
                     >

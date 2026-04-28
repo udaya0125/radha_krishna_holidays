@@ -11,8 +11,8 @@ const AddUserForm = ({ showForm, setShowForm, onClose, onUserAdded }) => {
     const [imageFile, setImageFile] = useState(null);
 
     const roles = [
-        { value: "Administrator", label: "Administrator" },
-        { value: "Editor", label: "Editor" },
+        { value: "admin", label: "Admin" },
+        { value: "editor", label: "Editor" },
     ];
 
     const {

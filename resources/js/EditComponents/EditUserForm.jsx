@@ -11,8 +11,8 @@ const EditUserForm = ({ showForm, setShowForm, editingUser, onClose, onUserUpdat
     const imgurl = import.meta.env.VITE_IMAGE_PATH;
 
     const roles = [
-        { value: "Administrator", label: "Administrator" },
-        { value: "Editor", label: "Editor" },
+        { value: "admin", label: "Admin" },
+        { value: "editor", label: "Editor" },
     ];
 
     const {

@@ -319,7 +319,7 @@ const AdminNavBar = ({ onMenuToggle }) => {
                                     <div className="w-8 h-8 rounded-full flex items-center justify-center overflow-hidden bg-gray-200">
                                         {user?.image ? (
                                             <img
-                                                src={user.image}
+                                                src={`/storage/${user.image}`}
                                                 alt={`${
                                                     user?.name || "User"
                                                 } profile`}

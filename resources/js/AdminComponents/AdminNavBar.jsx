@@ -238,6 +238,7 @@ const AdminNavBar = ({ onMenuToggle }) => {
     const userMenuRef = useRef(null);
     const { auth } = usePage().props;
     const user = auth?.user;
+    const imgurl = import.meta.env.VITE_IMAGE_PATH;
 
     const toggleUserMenu = () => {
         setIsUserMenuOpen((prev) => !prev);
@@ -319,7 +320,7 @@ const AdminNavBar = ({ onMenuToggle }) => {
                                     <div className="w-8 h-8 rounded-full flex items-center justify-center overflow-hidden bg-gray-200">
                                         {user?.image ? (
                                             <img
-                                                src={`/storage/${user.image}`}
+                                                src={`${imgurl}/${user.image}`}
                                                 alt={`${
                                                     user?.name || "User"
                                                 } profile`}

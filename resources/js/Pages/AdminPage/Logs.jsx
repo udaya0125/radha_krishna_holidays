@@ -292,7 +292,8 @@
 import AdminWrapper from "@/AdminComponents/AdminWrapper";
 import React, { useState, useMemo, useEffect } from "react";
 import axios from "axios";
-import MyTable from "@/components/MyTable"; // Adjust the import path as needed
+import MyTable from "@/MyTable/MyTable";
+
 
 const Logs = () => {
     const [activityLogs, setActivityLogs] = useState([]);
@@ -377,7 +378,7 @@ const Logs = () => {
                 ) : error ? (
                     <div className="text-center py-8 text-red-500">{error}</div>
                 ) : (
-                    <MyTable 
+                    <MyTable
                         columns={columns} 
                         data={activityLogs} 
                     />
